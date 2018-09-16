@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    >
+    <TextView
+
+        android:id="@+id/titleView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:textSize="23sp"
+        android:text="Select favourite sources"
+        android:fontFamily="@font/secular_one"
+        android:layout_gravity="center" />
+<android.support.v7.widget.RecyclerView
+    android:layout_centerHorizontal="true"
+    android:layout_below="@+id/titleView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:id="@+id/checkRecycle"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/test"
+        android:textSize="20sp"
+        android:layout_below="@+id/btnDone"
+        />
+    <Button
+        android:id="@+id/btnDone"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="40dp"
+        android:text="Done"
+        android:background="@drawable/btn_background"
+        android:layout_marginEnd="17dp"
+        android:layout_gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkRecycle"/>
+
+</RelativeLayout>
